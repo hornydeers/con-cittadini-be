@@ -1,5 +1,6 @@
 package horny.deers;
 
+import org.apache.log4j.Logger;
 import org.eclipse.jetty.server.Request;
 import org.eclipse.jetty.server.handler.AbstractHandler;
 
@@ -20,6 +21,10 @@ public class Handler extends AbstractHandler
                        HttpServletResponse response)
             throws IOException, ServletException
     {
+        final Logger logger = Logger.getLogger(this.getClass());
+
+        logger.info("Received request: " + baseRequest.getOriginalURI());
+
         if ("/subscribe".equals(target)) {
             new SubscribeAction(_userIds).process(baseRequest, request, response);
             return;
