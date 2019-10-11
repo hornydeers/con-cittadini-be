@@ -8,27 +8,32 @@ import org.eclipse.jetty.server.Request;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.util.List;
+import java.util.HashMap;
+import java.util.Map;
 
 import static javax.servlet.http.HttpServletResponse.SC_OK;
 
 public class SubscribeAction extends SiteAction {
-    private List<String> _userIds;
+    private Map<String, UserInfo> _users;
 
-    public SubscribeAction(List<String> userIds) {
-        _userIds = userIds;
+    public SubscribeAction(Map<String, UserInfo> users) {
+        _users = users;
     }
 
     public void process(Request baseRequest, HttpServletRequest request, HttpServletResponse response) throws IOException {
         String body = IOUtils.toString(request.getReader());
         final JsonObject values = new Gson().fromJson(body, JsonObject.class);
-        String userId = values.get("userId").getAsString();
-        if (!_userIds.contains(userId)) {
-            _userIds.add(userId);
-            writeResponseMessage(baseRequest, response, "Subscribed: " + userId, SC_OK);
-        }
-        else {
-            writeResponseMessage(baseRequest, response, "User already exists", SC_OK);
-        }
+        final String userId = stringValue(values, "userId");
+            _users.put(userId, new UserInfo(
+                    stringValue(values, "buttonId"),
+                    stringValue(values, "latitude"),
+                    stringValue(values, "longitude")));
+
+        writeResponseMessage(baseRequest, response, "", SC_OK);
     }
+
+    private String stringValue(JsonObject values, String key) {
+        return values.get(key).getAsString();
+    }
+
 }

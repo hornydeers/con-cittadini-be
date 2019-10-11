@@ -19,13 +19,19 @@ public class SubscribeTest
             HttpClient httpClient = new HttpClient();
             httpClient.start();
 
-            final Request request = httpClient.POST("http://localhost:9090/subscribe");
-            request.header(HttpHeader.CONTENT_TYPE, "application/json");
-            request.content(new StringContentProvider("{\"userId\":\"cittadino\"}","utf-8"));
-            ContentResponse response = request.send();
+            final Request request1 = httpClient.POST("http://localhost:9090/subscribe");
+            request1.header(HttpHeader.CONTENT_TYPE, "application/json");
+            request1.content(new StringContentProvider("{\"userId\":\"cittadino\",\"buttonId\":\"il-bottone-magico\",\"latitude\":\"3.456\",\"longitude\":\"-10.23\"}","utf-8"));
+            ContentResponse response1 = request1.send();
 
-            assertThat(response.getStatus(), is(OK_200));
-            assertThat(response.getContentAsString(), is("Subscribed: cittadino"));
+            assertThat(response1.getStatus(), is(OK_200));
+
+            final Request request2 = httpClient.POST("http://localhost:9090/subscribe");
+            request2.header(HttpHeader.CONTENT_TYPE, "application/json");
+            request2.content(new StringContentProvider("{\"userId\":\"cittadino\",\"buttonId\":\"il-bottone-magico\",\"latitude\":\"3.456\",\"longitude\":\"-10.23\"}","utf-8"));
+            ContentResponse response2 = request2.send();
+
+            assertThat(response2.getStatus(), is(OK_200));
         }
     }
 }

@@ -8,12 +8,12 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.HashMap;
+import java.util.Map;
 
 public class Handler extends AbstractHandler
 {
-    private static List<String> _userIds = new ArrayList<>();
+    private static Map<String, UserInfo> _users = new HashMap<>();
 
     public void handle(String target,
                        Request baseRequest,
@@ -26,7 +26,7 @@ public class Handler extends AbstractHandler
         logger.info("Received request: " + baseRequest.getOriginalURI());
 
         if ("/subscribe".equals(target)) {
-            new SubscribeAction(_userIds).process(baseRequest, request, response);
+            new SubscribeAction(_users).process(baseRequest, request, response);
             return;
         }
         new AliveAction().process(baseRequest, request, response);

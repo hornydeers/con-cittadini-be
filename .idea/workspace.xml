@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be252902-2a52-4f15-825d-2f15b752dee4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/horny/deers/UserInfo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/horny/deers/SubscribeAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/horny/deers/SubscribeAction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/horny/deers/SubscribeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/horny/deers/SubscribeTest.java" afterDir="false" />
     </list>
