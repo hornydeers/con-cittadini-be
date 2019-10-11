@@ -18,11 +18,17 @@ public class SubscribeAction {
         String userId = request.getParameter("userId");
         if (!_userIds.contains(userId)) {
             _userIds.add(userId);
-
-            response.setContentType("text/html;charset=utf-8");
-            response.setStatus(HttpServletResponse.SC_OK);
-            baseRequest.setHandled(true);
-            response.getWriter().print("Subscribed: " + userId);
+            writeResponseMessage(baseRequest, response, "Subscribed: " + userId);
         }
+        else {
+            writeResponseMessage(baseRequest, response, "User already exists");
+        }
+    }
+
+    private void writeResponseMessage(Request baseRequest, HttpServletResponse response, String content) throws IOException {
+        response.setContentType("text/html;charset=utf-8");
+        response.setStatus(HttpServletResponse.SC_OK);
+        baseRequest.setHandled(true);
+        response.getWriter().print(content);
     }
 }

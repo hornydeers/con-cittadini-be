@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be252902-2a52-4f15-825d-2f15b752dee4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/horny/deers/SubscribeAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/horny/deers/SubscribeTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/horny/deers/Handler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/horny/deers/Handler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/horny/deers/SubscribeAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/horny/deers/SubscribeAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/horny/deers/SubscribeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/horny/deers/SubscribeTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,6 +32,7 @@
   <component name="ProjectId" id="1S3Mos4BsqtHAvCvXlSPFCMA86l" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
@@ -56,7 +56,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.App">
+  <component name="RunManager" selected="JUnit.SubscribeTest.shouldTellOk">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="horny.deers.App" />
       <module name="con-cittadino-be" />
@@ -117,21 +117,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="All in con-cittadino-be" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SubscribeTest.shouldTellOk" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="con-cittadino-be" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="horny.deers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="horny.deers" />
+      <option name="MAIN_CLASS_NAME" value="horny.deers.SubscribeTest" />
+      <option name="METHOD_NAME" value="shouldTellOk" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SubscribeTest.shouldTellOk" />
         <item itemvalue="Application.App" />
         <item itemvalue="JUnit.AliveTest.shouldTellOk" />
         <item itemvalue="JUnit.AliveTest" />
         <item itemvalue="JUnit.AliveTest.shouldAnswerWithTrue" />
-        <item itemvalue="JUnit.All in con-cittadino-be" />
       </list>
     </recent_temporary>
   </component>

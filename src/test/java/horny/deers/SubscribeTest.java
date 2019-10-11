@@ -16,10 +16,15 @@ public class SubscribeTest
             HttpClient httpClient = new HttpClient();
             httpClient.start();
 
-            ContentResponse response = httpClient.GET("http://localhost:9090/subscribe?userId=cittadino");
+            ContentResponse response1 = httpClient.GET("http://localhost:9090/subscribe?userId=cittadino");
 
-            assertThat(response.getStatus(), is(OK_200));
-            assertThat(response.getContentAsString(), is("Subscribed: cittadino"));
+            assertThat(response1.getStatus(), is(OK_200));
+            assertThat(response1.getContentAsString(), is("Subscribed: cittadino"));
+
+            ContentResponse response2 = httpClient.GET("http://localhost:9090/subscribe?userId=cittadino");
+
+            assertThat(response2.getStatus(), is(OK_200));
+            assertThat(response2.getContentAsString(), is("User already exists"));
         }
     }
 }
