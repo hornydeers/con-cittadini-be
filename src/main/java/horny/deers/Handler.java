@@ -8,7 +8,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-public class HelloWorld extends AbstractHandler
+public class Handler extends AbstractHandler
 {
     public void handle(String target,
                        Request baseRequest,
@@ -19,6 +19,6 @@ public class HelloWorld extends AbstractHandler
         response.setContentType("text/html;charset=utf-8");
         response.setStatus(HttpServletResponse.SC_OK);
         baseRequest.setHandled(true);
-        response.getWriter().println("<h1>Hello World</h1>");
+        response.getWriter().print("OK");
     }
 }

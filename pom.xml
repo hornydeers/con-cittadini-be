@@ -30,6 +30,11 @@
       <artifactId>jetty-server</artifactId>
       <version>9.4.21.v20190926</version>
     </dependency>
+    <dependency>
+      <groupId>org.eclipse.jetty</groupId>
+      <artifactId>jetty-client</artifactId>
+      <version>9.4.21.v20190926</version>
+    </dependency>
   </dependencies>
 
   <build>
