@@ -16,9 +16,6 @@ public class Handler extends AbstractHandler
                        HttpServletResponse response)
             throws IOException, ServletException
     {
-        response.setContentType("text/html;charset=utf-8");
-        response.setStatus(HttpServletResponse.SC_OK);
-        baseRequest.setHandled(true);
-        response.getWriter().print("OK");
+        new AliveAction().process(baseRequest, request, response);
     }
 }

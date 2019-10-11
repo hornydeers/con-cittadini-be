@@ -16,7 +16,7 @@ public class AliveTest
             HttpClient httpClient = new HttpClient();
             httpClient.start();
 
-            ContentResponse response = httpClient.GET("http://localhost:9090");
+            ContentResponse response = httpClient.GET("http://localhost:9090/");
 
             assertThat(response.getStatus(), is(OK_200));
             assertThat(response.getContentAsString(), is("OK"));
