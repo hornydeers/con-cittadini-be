@@ -29,6 +29,10 @@ public class Handler extends AbstractHandler
             new SubscribeAction(_users).process(baseRequest, request, response);
             return;
         }
+        if ("/user".equals(target)) {
+            new UserAction(_users).process(baseRequest, request, response);
+            return;
+        }
         new AliveAction().process(baseRequest, request, response);
     }
 }

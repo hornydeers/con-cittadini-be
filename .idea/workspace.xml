@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be252902-2a52-4f15-825d-2f15b752dee4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/horny/deers/UserInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/horny/deers/SubscribeAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/horny/deers/SubscribeAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/horny/deers/SubscribeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/horny/deers/SubscribeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -61,20 +58,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.SubscribeTest.shouldTellOk">
-    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="horny.deers.App" />
-      <module name="con-cittadino-be" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="horny.deers.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.UserTest.shouldGiveKnownUser">
     <configuration name="AliveTest.shouldTellOk" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="con-cittadino-be" />
       <extension name="coverage">
@@ -115,7 +99,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="horny.deers in con-cittadino-be" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserTest.shouldGiveKnownUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="con-cittadino-be" />
       <extension name="coverage">
         <pattern>
@@ -124,18 +108,36 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="horny.deers" />
-      <option name="TEST_OBJECT" value="package" />
+      <option name="MAIN_CLASS_NAME" value="horny.deers.UserTest" />
+      <option name="METHOD_NAME" value="shouldGiveKnownUser" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserTest.shouldGiveNotFoundOnUnknownUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="con-cittadino-be" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="horny.deers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="horny.deers" />
+      <option name="MAIN_CLASS_NAME" value="horny.deers.UserTest" />
+      <option name="METHOD_NAME" value="shouldGiveNotFoundOnUnknownUser" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserTest.shouldGiveKnownUser" />
+        <item itemvalue="JUnit.UserTest.shouldGiveNotFoundOnUnknownUser" />
         <item itemvalue="JUnit.SubscribeTest.shouldTellOk" />
         <item itemvalue="JUnit.All in con-cittadino-be" />
         <item itemvalue="JUnit.AliveTest.shouldTellOk" />
-        <item itemvalue="JUnit.horny.deers in con-cittadino-be" />
-        <item itemvalue="Application.App" />
       </list>
     </recent_temporary>
   </component>
