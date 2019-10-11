@@ -1,5 +1,8 @@
 package horny.deers;
 
+import com.google.gson.Gson;
+import com.google.gson.JsonObject;
+import org.apache.commons.io.IOUtils;
 import org.eclipse.jetty.server.Request;
 
 import javax.servlet.http.HttpServletRequest;
@@ -17,7 +20,9 @@ public class SubscribeAction extends SiteAction {
     }
 
     public void process(Request baseRequest, HttpServletRequest request, HttpServletResponse response) throws IOException {
-        String userId = request.getParameter("userId");
+        String body = IOUtils.toString(request.getReader());
+        final JsonObject values = new Gson().fromJson(body, JsonObject.class);
+        String userId = values.get("userId").getAsString();
         if (!_userIds.contains(userId)) {
             _userIds.add(userId);
             writeResponseMessage(baseRequest, response, "Subscribed: " + userId, SC_OK);

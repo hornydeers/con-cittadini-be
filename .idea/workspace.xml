@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be252902-2a52-4f15-825d-2f15b752dee4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/horny/deers/SiteAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/horny/deers/AliveAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/horny/deers/AliveAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/horny/deers/Handler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/horny/deers/Handler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/horny/deers/SubscribeAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/horny/deers/SubscribeAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/horny/deers/SubscribeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/horny/deers/SubscribeTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -64,7 +61,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.All in con-cittadino-be">
+  <component name="RunManager" selected="JUnit.SubscribeTest.shouldTellOk">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="horny.deers.App" />
       <module name="con-cittadino-be" />
@@ -134,10 +131,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SubscribeTest.shouldTellOk" />
         <item itemvalue="JUnit.All in con-cittadino-be" />
         <item itemvalue="JUnit.AliveTest.shouldTellOk" />
         <item itemvalue="JUnit.horny.deers in con-cittadino-be" />
-        <item itemvalue="JUnit.SubscribeTest.shouldTellOk" />
         <item itemvalue="Application.App" />
       </list>
     </recent_temporary>
